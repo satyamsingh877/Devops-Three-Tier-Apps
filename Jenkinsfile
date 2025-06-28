@@ -13,7 +13,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git branch: 'main', url: 'https://github.com/your-repo/three-tier-app.git'
+        git branch: 'main', url: 'https://github.com/satyamsingh877/Devops-Three-Tier-Apps.git'
       }
     }
     
