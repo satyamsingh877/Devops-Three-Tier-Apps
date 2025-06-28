@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-east-1"  # Change to your preferred region
+  region = "eu-north-1"  # Change to your preferred region
 }
 
 # Frontend ECR Repository
