@@ -20,8 +20,8 @@ pipeline {
      stage("SonarQube: Code Analysis"){
             steps{
                 script{
-                    sonarqube_analysis("Sonar","Devops-Three-Tier-Apps
-","Devops-Three-Tier-Apps
+                    sonarqube_analysis("Sonar","Devops"
+","Devops
 ")
                 }
             }
