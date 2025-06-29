@@ -17,13 +17,23 @@ pipeline {
       }
     }
     
-    stage('SonarQube Analysis') {
-      steps {
-        withSonarQubeEnv('SonarQube') {
-          sh 'sonar-scanner -Dsonar.projectKey=devops-three-tier-apps -Dsonar.sources=.'
+     stage("SonarQube: Code Analysis"){
+            steps{
+                script{
+                    sonarqube_analysis("Sonar","Devops-Three-Tier-Apps
+","Devops-Three-Tier-Apps
+")
+                }
+            }
         }
-      }
-    }
+        
+        stage("SonarQube: Code Quality Gates"){
+            steps{
+                script{
+                    sonarqube_code_quality()
+                }
+            }
+        }
     
     stage('OWASP Dependency Check') {
       steps {
