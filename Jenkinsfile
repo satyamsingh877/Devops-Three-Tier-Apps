@@ -2,7 +2,7 @@ pipeline {
   agent any
   
   environment {
-    AWS_ACCOUNT_ID = '123456789012'
+    AWS_ACCOUNT_ID = '180294201508'
     AWS_REGION = 'eu-north-1'
     ECR_REPO_FRONTEND = 'Devops-Three-Tier-Apps/frontend'
     ECR_REPO_BACKEND = 'Devops-Three-Tier-Apps/backend'
