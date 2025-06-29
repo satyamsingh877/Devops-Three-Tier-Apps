@@ -20,9 +20,9 @@ pipeline {
      stage("SonarQube: Code Analysis"){
             steps{
                 script{
-                    sonarqube_analysis("Sonar","Devops"
-","Devops
-")
+                    sonarqube_analysis("Sonar","Devops","Devops")
+
+
                 }
             }
         }
