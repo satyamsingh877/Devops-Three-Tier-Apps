@@ -17,15 +17,14 @@ pipeline {
       }
     }
     
-     stage("SonarQube: Code Analysis"){
-            steps{
-                script{
-                    sonarqube_analysis("Sonar","Devops","Devops")
-
-
-                }
-            }
+       stage('SonarQube Analysis') {
+      steps {
+        withSonarQubeEnv('SonarQube') {
+          sh 'sonar-scanner -Dsonar.projectKey=Devops-Three-Tier-Apps -Dsonar.sources=.'
+        
         }
+      }
+    }
         
         stage("SonarQube: Code Quality Gates"){
             steps{
