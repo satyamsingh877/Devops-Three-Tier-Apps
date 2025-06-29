@@ -3,7 +3,7 @@ pipeline {
   
   environment {
     AWS_ACCOUNT_ID = '123456789012'
-    AWS_REGION = 'us-east-1'
+    AWS_REGION = 'eu-north-1'
     ECR_REPO_FRONTEND = 'Devops-Three-Tier-Apps/frontend'
     ECR_REPO_BACKEND = 'Devops-Three-Tier-Apps/backend'
     CLUSTER_NAME = 'Devops-Three-Tier-Apps-cluster'
