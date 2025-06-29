@@ -20,7 +20,7 @@ pipeline {
     stage('SonarQube Analysis') {
       steps {
         withSonarQubeEnv('SonarQube') {
-          sh 'sonar-scanner -Dsonar.projectKey=three-tier-app -Dsonar.sources=.'
+          sh 'sonar-scanner -Dsonar.projectKey=Devops-Three-Tier-Apps -Dsonar.sources=.'
         }
       }
     }
